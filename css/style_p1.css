@@ -1,0 +1,750 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 1000px;
+}
+.secshin1{
+    background-image: url(../img/background\ .jpg) ;
+    width: 100%;
+    height: 100vh; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.secshin1_ovarlay{
+    position: absolute;
+    background-color: rgba(255, 214, 196, 0.478);
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+}
+.secshin1_header_home{
+    margin: 15px 20px;
+    font-size: 23px;
+    float: left;
+}
+.secshin1_header{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+    background-color: rgba(220, 168, 113, 0.676);
+}
+.secshin1_header_serch1{
+   margin-top: 8px;
+   margin-left: 15px; 
+}
+
+.secshin1_header_serch{
+    background-color: rgb(210, 207, 207);
+    height: 30px;
+    width: 200px;
+    margin-top: 15px;
+    margin-right: 100px;
+    float: left;
+    border-radius: 15px;
+    cursor: text;
+}
+.div_list{
+    width: 100px;
+    height: 95px;
+    background-color: rgb(210, 207, 207);
+    position: absolute;
+    line-height: 30px;
+    border-radius: 5px;
+    margin-top:6px;
+    font-size: 30px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+}
+.secshin1_header_list li:hover .div_list{
+    opacity: 1;
+    transition: 1s;
+    visibility: visible;
+}
+.div_list_a::after{
+    margin-top:6px;
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 0px;
+
+    top: 0;
+    left: 0;
+}
+.div_list_a:hover::after{
+    width: 100%;
+    height: 100%;
+}
+.secshin1_header_list{
+    float: right; 
+}
+.secshin1_header_list li {
+    display: inline-block;
+    margin: 20px 20px;
+     
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.secshin1_header_list li a{
+    text-decoration: none;
+    color: rgb(141, 105, 21);
+    position: relative;
+    
+}
+
+
+.secshin1_header_list li a::after{
+    content: "";
+    position: absolute;
+
+    width: 0;
+    height: 3px;
+
+    left: 0;
+    bottom: 0;
+
+    transition: 1s;
+
+    background-color:rgb(210, 207, 207);
+}
+
+.secshin1_header_list li a:hover::after{
+    width: 100%;
+    
+}
+
+.secshin1_title{
+    position: absolute;
+    width: 50%; 
+    font-size: 30px;
+    text-transform: capitalize;
+    color: rgb(210, 207, 207);
+
+    position: absolute;
+    top:50%;
+    left:50%;
+       
+    transform: translate(-50% , -50%);
+    text-align: center;
+    line-height: 40px;
+    
+}
+.secshin1_title_p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.secshin1_title_butt{ 
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.button1{
+    background-color: rgb(246, 208, 162);
+}
+.button2{
+    background-color: rgb(178, 143, 100);
+}
+.button1:hover{
+    background-color: rgb(246, 208, 162, .8);
+}
+.button2:hover{
+    background-color: rgb(178, 143, 100, .8);
+}
+
+/* ///////////////////////////////////////////////secshin1 done/////////////////////////// */
+
+.secshin2{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(133, 113, 56, 0.851);
+}
+.secshin2_title{
+    margin-top: 50px;
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    
+}
+.secshin2_line{
+    width: 200px;
+    height: 4px;
+    background-color: rgb(210, 207, 207);
+    margin: auto;
+    margin-top: 20px;
+
+}
+.secshin2_boxs{
+    display: inline-block;
+    position: relative;
+    width: 250px;
+    height: 300px;
+
+    border: 3px solid rgb(34, 33, 33);
+    border-radius: 10px;
+
+    background-color:rgba(240, 135, 125, 0);
+    
+    margin-top: 50px;
+    margin-left: 40px;
+    text-align: center;
+    
+}
+.secshin2_boxs1{
+   margin-left: 370px; 
+}
+.secshin2_boxs_link{
+    text-decoration: none;
+    color: rgb(210, 207, 207);
+}
+.secshin2_boxs_title{
+    margin-top: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(50, 48, 48);
+}
+.secshin2_title2{
+    color: black;
+    margin-top: 30px;
+    line-height: 30px;
+    font-size: 20px;
+}
+.secshin2_boxs_soild{
+    font-size: 30px;
+}
+.secshin2_boxs::after{
+    content: "";
+    position: absolute;
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    
+    background-color: rgba(172, 167, 167, 0.4);
+    transition: 1s;
+}
+.secshin2_boxs:hover::after{
+    width: 100%;
+    height: 100%;
+}
+/* ///////////////////////////////////////////////secshin2 done/////////////////////////// */
+.secshin3{
+    background-color: rgba(133, 113, 56, 0.651);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.secshin3_title{
+    margin-top: 60px;
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.secshin3_line{
+    width: 150px;
+    height: 4px;
+    background-color: rgb(210, 207, 207);
+    margin: auto;
+    margin-top: 20px;
+
+}
+.secshin3_box_all{
+    width: 70%;
+    margin: auto;
+}
+.secshin3_box{
+    width: 30%;    
+    margin: auto;
+    float: left;
+    text-align: center;
+    padding: 15px 0px;
+    position: relative;
+}
+.secshin3_box2{
+   margin: 0px 5%;
+}
+.secshin3_box_img{
+    width: 100%;
+}
+.secshin3_box_overlay{
+    position: absolute;
+    top: 15px;
+    left: 0;
+    bottom: 15px;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+
+    visibility: hidden;
+}
+.secshin3_box:hover .secshin3_box_overlay{
+    visibility: visible;
+}
+.secshin3_box_title{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(210, 207, 207);
+    position: absolute;
+    padding: 20px;
+}
+
+/* /////////////////////////////////////////secshin3 done/////////////////////////////////////////////////// */
+.secshin4{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(132, 116, 75, 0.5);
+}
+.secshin4_title{
+    margin-top: 35px;
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.secshin4_line{
+    width: 400px;
+    height: 4px;
+    background-color: brown;
+    margin: auto;
+    margin-top: 20px;
+
+}
+.secshin4_box_all{
+    width: 60%;
+    margin: auto;
+}
+.secshin4_boxs{
+    display: inline-block;
+    width: 30%;
+    position: relative;
+    border: 3px solid rgb(34, 33, 33);
+    border-radius: 10px;
+
+    background-color:rgba(240, 135, 125, 0);
+
+    padding: 50px 0px;
+    margin-top: 40px;
+    
+}
+.secshin4_boxs2{
+    margin: 0px 4.5%;
+}
+
+.secshin4_boxs_title{
+    margin-top: 30px;
+    line-height: 20px;
+    font-size: 20px;
+    display: inline;
+  
+}
+.secshin4_boxs_p{
+    padding: 0px 50px;
+}
+.secshin4_boxs_title1{
+    color: antiquewhite;
+    line-height: 50px;
+    display: inline;
+    font-size: 23px;
+}
+.secshin4_boxs_soild{
+    font-size: 40px;
+}
+.secshin4_boxs::after{
+    content: "";
+    position: absolute;
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    
+    background-color: rgba(247, 243, 243, 0.4);
+    transition: 2s;
+}
+.secshin4_boxs:hover::after{
+    width: 100%;
+    height: 100%;
+}
+
+/* /////////////////////////////////////////secshin4 done/////////////////////////////////////////////////// */
+
+.secshin5{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(132, 116, 75, 0.3);
+}
+.secshin5_word{
+    padding: 100px 100px;
+    position: absolute;
+    font-size: 20px;
+    line-height: 40px;
+}
+.secshin5_word_pargraf{
+    width: 500px;
+    line-height: 20px;
+}
+.secshin5_title{
+    font-size: 35px;
+}
+.secshin5_line{
+    width: 100px;
+    height: 4px;
+    background-color: brown;
+    margin-top: 10px;
+}
+
+.secshin5_input_img{ 
+    float: right;
+    margin-top: 120px;
+    margin-right: 200px;
+}
+.secshin5_input{
+    margin-top: 30px;
+    margin-left: 120px;  
+}
+/* /////////////////////////////////////////secshin5 done/////////////////////////////////////////////////// */
+
+.secshin6{
+   width: 100%;
+   height: 100vh;
+   
+}
+.secshin6_background{
+    background-image: url(../img/img8.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    border-radius: 0px;
+    margin-top: 200;
+    height: 400px;
+} 
+.secshin6_icon{
+    color: #fff;
+    float: right;
+    margin-right: 150px;
+    margin-top: 120px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.secshin6_icon1{
+    color: rgba(128, 128, 6, 0.899);
+}
+.secshin6_icon2{
+    color: darkgoldenrod;
+}
+.secshin6_icon3{
+    color: red;
+}
+.secshin6_icon4{
+    color: gold;
+}
+/* /////////////////////////////////////////secshin6 done/////////////////////////////////////////////////// */
+
+.secshin7{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(132, 116, 75, 0.3);
+}
+.secshin7_title{
+    margin-top: 35px;
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    
+}
+.secshin7_line{
+    width: 100px;
+    height: 4px;
+    background-color: rgb(114, 103, 103);
+    margin: auto;
+    margin-top: 20px;
+}
+.secshin7_boxs_all{
+   width: 60%; 
+   margin: auto;
+   position: relative;
+   top: 70px;
+}
+.secshin7_boxs{
+    display: inline-block;
+    position: relative;
+    width: 30%; 
+    height: 300px;
+    border: 3px solid rgb(34, 33, 33);
+    border-radius: 10px;
+
+    background-color:rgba(240, 135, 125, 0);
+    text-align: center;
+}
+.secshin7_boxs2{
+    margin: 0px 4%;
+}
+.secshin7_price{
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    color: rgb(226, 172, 105);
+    border: 3px solid rgb(226, 172, 105);
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.secshin7_p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.secshin7_boxs_title{
+    margin-top: 30px;
+    line-height: 30px;
+    font-size: 20px;
+}
+.secshin7_but{
+    width: 150px;
+    height: 30px;
+    background-color:  rgb(226, 172, 105);
+    border: 3px solid rgb(34, 33, 33);
+    border-radius: 10px;
+    position: relative;
+    bottom: 10px;
+   font-weight: bold;
+}
+.secshin7_boxs::before{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    
+    background-color: rgba(247, 243, 243, 0.5);
+}
+.secshin7_boxs:hover::before{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+/* /////////////////////////////////////////secshin7 done/////////////////////////////////////////////////// */
+
+
+.secshin8{
+   width: 100%;
+   height: 100vh;
+   
+}
+.secshin8_background{
+    background-image: url(../img/img9.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    border-radius: 0px;
+    margin-top: 200;
+    height: 400px;
+
+} 
+.secshin8_icons{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 80px;
+}
+.secshin8_icon1{
+    float: left;
+    width: 50%;
+    height: 250px;
+    position: relative;
+}
+.secshin8_icon_img{
+    border-radius: 50%;
+    display: inline-block;
+}
+.secshin8_icon1_title{
+    font-size: 17px;
+    text-indent: 20px;
+    display: inline-block;
+}
+.secshin8_boxs_p{
+    width: 60%;
+    font-size: 25px;
+}
+
+
+
+/* /////////////////////////////////////////secshin8 done/////////////////////////////////////////////////// */
+.secshin9{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(132, 116, 75, 0.4);
+}
+.secshin9_containre{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 200px;
+}
+
+.secshin9_box{
+    float: left;
+    width: 30%;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 18px 14px;
+    position: relative;
+    border-radius: 20px;
+}
+.secshin9_box_2{
+    margin: 0 40px;
+}
+.secshin9_img{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.secshin9_img img{
+    width: 100%;
+}
+.secshin9_icon{
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    bottom: 0;
+    right: 0;
+}
+.secshin9_icon  a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(104, 88, 36);
+    margin-left: auto;
+}
+.secshin9_icon  a   i{
+    line-height: 40px;
+    font-size: 23px;
+    color: #fff;
+}
+.secshin9_info{
+    line-height: 30px;
+}
+.secshin9_box::after{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    
+    background-color: rgba(247, 243, 243, 0.4);
+    transition: 1s;
+    border-radius: 20px;
+}
+.secshin9_box:hover::after{
+    width: 100%;
+    height: 100%; 
+}
+
+/* /////////////////////////////////////////secshin9 done/////////////////////////////////////////////////// */
+
+.secshin10{
+    width:100%;
+    height:100vh;
+    background-color: rgba(132, 116, 75, 0.3);
+}
+.secshin10_containre{
+    position: relative;
+    width:80%;
+    margin:auto;
+}
+.secshin10_box{
+    position: relative;
+    top: 120px;
+    
+    width:300px;
+    float: left;
+    border: 2px solid #0f0e0e;
+    border-radius: 10px;
+
+    text-align: center;
+    line-height: 30px;
+    margin-right: 40px;
+}
+.secshin10_box1{
+    margin-left: 10%;
+}
+.secshin10_img{
+    margin-top: 40px;
+    border-radius: 10px;
+}
+.secshin10_list li{
+    display: inline;
+}
+.secshin10_p{
+    font-weight: bold;
+    margin: auto;
+}
+.secshin10_a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/* /////////////////////////////////////////secshin10 done/////////////////////////////////////////////////// */
+
+.secshin11{
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(132, 116, 75, 0.2);
+    position: relative;
+}
+.secshin11_img{
+    text-align: center;
+    padding: 40px;   
+}
+.secshi11_img1{
+    border-radius: 10px;
+}
+.secshin11_list{
+    text-align: center;
+}
+.secshin11_list li{
+    display: inline;
+    font-size: 40px;
+}
+.i1{
+    color: rgb(37, 37, 255);
+    border-radius: 10px;
+}
+.i2{
+    color: rgb(88, 88, 255);
+    border-radius: 10px;
+}
+.i4{
+    color: rgb(157, 45, 105);
+    border-radius: 10px;
+}
+.secshin11_title{
+    text-align: center;
+}
+
+/* /////////////////////////////////////////secshin11 done/////////////////////////////////////////////////// */
+
+/* /////////////////////////////////////////project done/////////////////////////////////////////////////// */
